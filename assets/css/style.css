@@ -1,0 +1,219 @@
+/* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFDE7; /* Светло-жёлтый фон */
+    color: #5D4037; /* Коричневый текст */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #FFEB3B; /* Ярко-жёлтый */
+    border-bottom: 2px solid #FBC02D; /* Тёмно-жёлтая линия */
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5D4037; /* Коричневый */
+}
+
+/* Кнопки в header */
+.nav_buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #FBC02D; /* Тёмно-жёлтый */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #F9A825; /* Более тёмный жёлтый */
+    transform: scale(1.05);
+}
+
+/* Навигация */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    background-color: #FFF8E1; /* Очень светло-жёлтый */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    flex: 1;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #FBC02D; /* Тёмно-жёлтый */
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #F9A825; /* Более насыщенный жёлтый */
+    transform: scale(1.1);
+}
+
+/* Основной блок формы */
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFDE7; /* Светло-жёлтый */
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки формы */
+form h1 {
+    text-align: center;
+    color: #5D4037; /* Коричневый */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Поля формы */
+form select, 
+form input[type="number"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #FBC02D; /* Тёмно-жёлтый */
+    border-radius: 6px;
+    background-color: #FFF8E1; /* Очень светло-жёлтый */
+    color: #5D4037; /* Коричневый */
+    font-size: 14px;
+}
+
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #F9A825; /* Подсветка фокуса */
+}
+
+/* Кнопки формы */
+form button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #FBC02D; /* Тёмно-жёлтый */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #F9A825; /* Более тёмный жёлтый */
+}
+
+/* Сообщения об ошибках */
+.error-message, .success-message {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #D32F2F; /* Красный для ошибок */
+}
+
+.success-message {
+    color: #388E3C; /* Зеленый для успеха */
+}
+
+/* Таблица */
+.table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFDE7; /* Светло-жёлтый */
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #FBC02D; /* Тёмно-жёлтая рамка */
+}
+
+table th {
+    background-color: #FBC02D;
+    color: #FFF;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #FFF8E1; /* Очень светло-жёлтый */
+}
+
+table tr:nth-child(odd) {
+    background-color: #FFFDE7; /* Светло-жёлтый */
+}
+
+/* Блоки с формами и сообщениями */
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFDE7;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Выравнивание для формы с паролем */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+/* Элементы в контейнерах */
+.container {
+    padding: 20px;
+}
+
+/* Текстовое сообщение */
+.message-text {
+    font-size: 14px;
+    color: #5D4037;
+}
